@@ -27,7 +27,6 @@ void Plotter::paintEvent(QPaintEvent *event) {
     painter.setBrush(brush);
     painter.setPen(pen);
     painter.drawRect(0, 0, width(), height());
-    pen.setColor(QColor(200, 200, 0));
     painter.setPen(pen);
     painter.drawLine(0, height()/2, width(), height()/2);
     pen.setColor(Qt::blue);

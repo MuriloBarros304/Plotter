@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Plotter</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QFormLayout" name="formLayout">
@@ -32,7 +32,10 @@
          <enum>QLayout::SetMaximumSize</enum>
         </property>
         <item>
-         <layout class="QGridLayout" name="gridLayout" rowstretch="0,100,0" columnstretch="100,0,0">
+         <layout class="QGridLayout" name="gridLayout" rowstretch="100,0,0" columnstretch="0,100,0">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMaximumSize</enum>
+          </property>
           <item row="0" column="0">
            <widget class="QLabel" name="label">
             <property name="text">
@@ -42,6 +45,12 @@
           </item>
           <item row="0" column="1">
            <widget class="QSlider" name="horizontalSliderAmp">
+            <property name="minimum">
+             <number>5</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -529,6 +538,15 @@
           </item>
           <item row="1" column="1">
            <widget class="QSlider" name="horizontalSliderFreq">
+            <property name="minimum">
+             <number>25</number>
+            </property>
+            <property name="maximum">
+             <number>125</number>
+            </property>
+            <property name="singleStep">
+             <number>1</number>
+            </property>
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
