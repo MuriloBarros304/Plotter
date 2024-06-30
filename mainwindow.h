@@ -19,6 +19,9 @@ public:
 public slots:
     void finaliza();
 
+private slots:
+    void on_horizontalSliderVel_valueChanged(int value);
+
 private:
     Ui::MainWindow *ui;
 };

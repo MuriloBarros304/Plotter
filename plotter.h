@@ -11,7 +11,6 @@ private:
     float amplitude;
     float frequencia;
     float velocidade;
-    int fundoR, fundoG, fundoB;
 public:
     explicit Plotter(QWidget *parent = nullptr);
     void paintEvent(QPaintEvent *event);

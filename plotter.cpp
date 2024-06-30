@@ -11,9 +11,6 @@ Plotter::Plotter(QWidget *parent)
     amplitude = 1;
     frequencia = 1;
     velocidade = 0;
-    fundoR = 255;
-    fundoG = 255;
-    fundoB = 200;
     startTimer(10);
     setMouseTracking(true);
 }
@@ -71,11 +68,11 @@ void Plotter::mudaAmp(int amp) {
 }
 
 void Plotter::mudaFreq(int freq) {
-    frequencia = freq;
+    frequencia = (float)freq/50;
     repaint();
 }
 
 void Plotter::mudaVel(int vel) {
-    velocidade = (float)vel/100;
+    velocidade = (float)vel/1000;
     repaint();
 }

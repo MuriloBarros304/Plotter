@@ -27,6 +27,8 @@ MainWindow::MainWindow(QWidget *parent)
             SIGNAL(valueChanged(int)),
             ui->widgetPlot,
             SLOT(mudaVel(int)));
+    ui->horizontalSliderAmp->setValue(100);
+    ui->horizontalSliderFreq->setValue(50);
 }
 
 MainWindow::~MainWindow() {
@@ -36,3 +38,5 @@ MainWindow::~MainWindow() {
 void MainWindow::finaliza() {
     exit(0);
 }
+
+
