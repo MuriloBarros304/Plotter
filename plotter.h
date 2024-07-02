@@ -3,26 +3,26 @@
 
 #include <QWidget>
 
-class Plotter : public QWidget
-{
+class Plotter : public QWidget {
     Q_OBJECT
-private:
+   private:
     float theta;
     float amplitude;
     float frequencia;
     float velocidade;
-public:
+
+   public:
     explicit Plotter(QWidget *parent = nullptr);
     void paintEvent(QPaintEvent *event);
     void timerEvent(QTimerEvent *event);
     void mousePressEvent(QMouseEvent *event);
-signals:
+   signals:
     void mudaX(int);
     void mudaY(int);
-public slots:
+   public slots:
     void mudaAmp(int amp);
     void mudaFreq(int freq);
     void mudaVel(int vel);
 };
 
-#endif // PLOTTER_H
+#endif  // PLOTTER_H

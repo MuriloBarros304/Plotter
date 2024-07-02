@@ -12,18 +12,18 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
-public:
+   public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-public slots:
+   public slots:
     void finaliza();
 
-private slots:
+   private slots:
     void on_horizontalSliderVel_valueChanged(int value);
 
-private:
+   private:
     Ui::MainWindow *ui;
 };
 
-#endif // MAINWINDOW_H
+#endif  // MAINWINDOW_H
