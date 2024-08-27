@@ -29,8 +29,11 @@ MainWindow::MainWindow(QWidget *parent)
     
     ui->horizontalSliderAmp->setValue(100);
     ui->horizontalSliderFreq->setValue(50);
+    ui->horizontalSliderVel->setValue(0);
 }
 
 MainWindow::~MainWindow() { delete ui; }
 
 void MainWindow::finaliza() { exit(0); }
+
+
